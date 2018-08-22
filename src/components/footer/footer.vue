@@ -4,3 +4,5 @@
     <div>友情链接什么的都要显示出来</div>
   </el-footer>
 </template>
+
+<style src="./footer.scss" lang="scss" scoped></style>

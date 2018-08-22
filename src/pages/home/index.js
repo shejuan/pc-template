@@ -4,7 +4,7 @@ import template from './helloWorld.vue'
 import NewHeader from '../../components/myHeader'
 import NewFooter from '../../components/myFooter'
 import NewMain from '../../components/myMain'
-import NewAside from '../../components/aside'
+import NewAside from '../../components/myAside'
 
 @Component({
   name: 'demo',

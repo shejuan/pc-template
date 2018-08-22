@@ -4,4 +4,4 @@
     <div>登陆注册的按钮都要显示出来</div>
   </el-header>
 </template>
-<style src="./header.scss" lang="scss" scoped></style>
+<style src="./myHeader.scss" lang="scss" scoped></style>

@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import { Component } from 'vue-property-decorator'
-import template from './main.vue'
+import template from './myHeader.vue'
 
 @Component({
-  name: 'main',
+  name: 'myHeader',
   mixins: [template],
   components: {}
 })
-export default class Main extends Vue {
+export default class MyHeader extends Vue {
 }

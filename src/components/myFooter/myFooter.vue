@@ -5,4 +5,4 @@
   </el-footer>
 </template>
 
-<style src="./footer.scss" lang="scss" scoped></style>
+<style src="./myFooter.scss" lang="scss" scoped></style>

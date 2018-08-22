@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import { Component } from 'vue-property-decorator'
 import template from './helloWorld.vue'
-import NewHeader from '../../components/header'
-import NewFooter from '../../components/footer'
-import NewMain from '../../components/main'
+import NewHeader from '../../components/myHeader'
+import NewFooter from '../../components/myFooter'
+import NewMain from '../../components/myMain'
 import NewAside from '../../components/aside'
 
 @Component({

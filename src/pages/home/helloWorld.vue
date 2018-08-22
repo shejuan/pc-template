@@ -17,6 +17,5 @@
     <el-button style="margin-top: 12px;" @click="next">下一步</el-button>
   </div>
 </template>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style src="./helloWord.scss" lang="scss" scoped></style>

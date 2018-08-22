@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/pages/home/helloWorld'
+import HelloWorld from '@/pages/home'
 
 Vue.use(Router)
 

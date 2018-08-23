@@ -1,7 +1,17 @@
 <template>
   <el-aside width="200px">
-    我是aside
-    <div>一级二级菜单什么的按钮都要显示出来</div>
+    <el-menu :default-openeds="['1', '3']">
+      <template v-for="(item, index) in data">
+        <el-submenu :index="`${index+1}`" :key="index">
+          <template slot="title"><i class="el-icon-message"></i>{{item.title}}</template>
+          <el-menu-item-group  v-for="(val, valIndex) in item.list" :key="valIndex">
+            <router-link to="">
+              <el-menu-item :index="index+1+'-'+valIndex+1">{{val.oneTitle}}</el-menu-item>
+            </router-link>
+          </el-menu-item-group>
+        </el-submenu>
+      </template>
+    </el-menu>
   </el-aside>
 </template>
 <style src="./myAside.scss" lang="scss" scoped></style>

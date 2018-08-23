@@ -29,7 +29,11 @@ body > .el-container {
 
 .hello-first {
 flex-direction: row;
+height: -webkit-fill-available
 }
 .hello-two {
 flex-direction: column;
 }
+// .hello {
+//   height: 100%;
+// }

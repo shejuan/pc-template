@@ -8,4 +8,62 @@ import template from './myAside.vue'
   components: {}
 })
 export default class MyAside extends Vue {
+  data = [
+    {
+      title: '首页',
+      list: [
+        {
+          oneTitle: '无'
+        },
+        {
+          oneTitle: '无'
+        }
+      ]
+    },
+    {
+      title: '材料交易部门',
+      list: [
+        {
+          oneTitle: '主管'
+        },
+        {
+          oneTitle: '经理'
+        }
+      ],
+      path: './manage'
+    },
+    {
+      title: 'sass',
+      list: [
+        {
+          oneTitle: '产品部门'
+        },
+        {
+          oneTitle: '研发部门'
+        }
+      ]
+    },
+    {
+      title: '领筑电商',
+      list: [
+        {
+          oneTitle: '后台'
+        },
+        {
+          oneTitle: '前端'
+        }
+      ]
+    },
+    {
+      title: '工程云',
+      list: [
+        {
+          oneTitle: 'UI'
+        },
+        {
+          oneTitle: '测试'
+        }
+      ]
+    }
+  ]
 }

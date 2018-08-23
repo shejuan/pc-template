@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import { Component } from 'vue-property-decorator'
-import template from './helloWorld.vue'
+import template from './home.vue'
 import NewHeader from '../../components/myHeader'
 import NewFooter from '../../components/myFooter'
 import NewMain from '../../components/myMain'

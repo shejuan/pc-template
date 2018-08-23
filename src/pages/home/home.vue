@@ -18,4 +18,4 @@
   </div>
 </template>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style src="./helloWord.scss" lang="scss" scoped></style>
+<style src="./home.scss" lang="scss" scoped></style>

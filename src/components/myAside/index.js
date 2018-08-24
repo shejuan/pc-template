@@ -24,10 +24,12 @@ export default class MyAside extends Vue {
       title: '材料交易部门',
       list: [
         {
-          oneTitle: '主管'
+          oneTitle: '主管',
+          path: '/cl/manage'
         },
         {
-          oneTitle: '经理'
+          oneTitle: '经理',
+          path: '/cl/jingli'
         }
       ],
       path: './manage'
@@ -66,4 +68,5 @@ export default class MyAside extends Vue {
       ]
     }
   ]
+ 
 }

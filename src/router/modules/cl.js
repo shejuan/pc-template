@@ -1,21 +1,23 @@
 import jingli from '@/pages/cl/jingli'
 import manage from '@/pages/cl/manage'
+import home from '@/pages/home'
+
 
 let routes = [
   {
     name: 'cl',
     path: '/cl',
     redirect: '/cl/jingli',
-    // component: Layout,
+    component: home,
     children: [
       {
         name: 'jingli',
-        path: '/jingli',
+        path: 'jingli',
         component: jingli
       },
       {
         name: 'manage',
-        path: '/manage',
+        path: 'manage',
         component: manage
       }
     ]

@@ -4,7 +4,7 @@ import template from './jingli.vue'
 
 @Component({
   name: 'jingli',
-  mixin: [template]
+  mixins: [template]
 })
 
 export default class Jlingli extends Vue {

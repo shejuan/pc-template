@@ -4,9 +4,9 @@ import template from './jingli.vue'
 
 @Component({
   name: 'jingli',
-  mixin: [template]
+  mixins: [template]
 })
 
-export default class Jlingli extends Vue {
+export default class Jingli extends Vue {
   data = '经理页面的展示'
 }

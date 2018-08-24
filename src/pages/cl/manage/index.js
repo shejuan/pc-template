@@ -4,7 +4,7 @@ import template from './manage.vue'
 
 @Component({
   name: 'manage',
-  mixin: [template]
+  mixins: [template]
 })
 
 export default class Manage extends Vue {

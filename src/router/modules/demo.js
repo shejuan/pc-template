@@ -3,7 +3,7 @@ import home from '@/pages/home'
 let routes = [
   {
     name: 'home',
-    path: '/',
+    path: '/home',
     component: home
   }
 ]

@@ -6,9 +6,13 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import './style/app.scss'
+import meta from 'vue-meta'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+Vue.use(meta, {
+  keyName: 'metaInfo'
+})
 
 /* eslint-disable no-new */
 new Vue({

@@ -2,6 +2,8 @@ import jingli from '@/pages/cl/jingli'
 import manage from '@/pages/cl/manage'
 import home from '@/pages/home'
 
+// require.ensure()
+
 let routes = [
   {
     name: 'cl',

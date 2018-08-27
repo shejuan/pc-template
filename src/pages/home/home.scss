@@ -26,14 +26,10 @@ body > .el-container {
 .el-container:nth-child(7) .el-aside {
   line-height: 320px;
 }
-
 .hello-first {
-flex-direction: row;
-height: -webkit-fill-available
+  // height: -webkit-fill-available;
+  flex-direction: row;
 }
 .hello-two {
-flex-direction: column;
+  flex-direction: column;
 }
-// .hello {
-//   height: 100%;
-// }

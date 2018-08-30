@@ -38,3 +38,6 @@ Vue.use(meta, {
   keyName: 'metaInfo'
 })
 可以随时更新title
+
+4.2018-8-30
+新增了vuex 模块

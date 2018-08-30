@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import { Component } from 'vue-property-decorator'
 import template from './jingli.vue'
+// import { watch } from 'fs'
 
 @Component({
   name: 'jingli',
@@ -8,5 +9,14 @@ import template from './jingli.vue'
 })
 
 export default class Jingli extends Vue {
-  data = '经理页面的展示'
+  data = ''
+
+  clickMe () {
+    this.$store.dispatch('doDemo', { paramer: '我是状态机更改过的值' })
+    this.data = this.$store.getters.getName
+  }
+
+  created () {
+    this.data = this.$store.getters.getName
+  }
 }

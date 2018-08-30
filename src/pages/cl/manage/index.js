@@ -8,5 +8,9 @@ import template from './manage.vue'
 })
 
 export default class Manage extends Vue {
-  data = '主管页面的展示'
+  data = ''
+  created () {
+    this.data = this.$store.getters.getName
+    console.log(this.data, 'this.data的值')
+  }
 }

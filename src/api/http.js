@@ -48,7 +48,6 @@ export let ax = axios.create({
   timeout: 10000,
   responseType: 'json',
   transformRequest: [function (data) {
-    debugger
     console.log('qq', data)
     if (data instanceof FormData) return data
     console.log('要序列化的，因为成功的发送了请求', data)
@@ -56,7 +55,6 @@ export let ax = axios.create({
     return stringify(data)
   }],
   transformResponse: [function (data) {
-    debugger
     console.log('响应了你发送的请求', data)
     return transformResponse(data)
   }]
@@ -65,13 +63,29 @@ export let ax = axios.create({
 
 // http get method
 export function get (url, data) {
-  debugger
   let newData = '?data=' + JSON.stringify(data)
   // let newData = '?data=' + JSON.stringify(processData(data)) // 这步要检测token 是否过期
   return ax.get(decodeURI(url + newData)).then((res) => {
     // console.log('请求成功返回来的参数', res.data)
     // return res.data
-    console.log('请求成功返回来的参数', res)
+    console.log('请求成功返回来的参数', res, decodeURI(url + newData))
+    return res
+  }).catch((err) => {
+    // handleError(err) 请求失败的处理方式
+    console.log('请求失败的处理方式')
+    throw err
+  })
+}
+
+// http post method
+export function post (url, data) {
+  // let newData = '?data=' + JSON.stringify(processData(data)) // 这步要检测token 是否过期
+  return ax.post(url, {
+    data: JSON.stringify(data)
+  }).then((res) => {
+    // console.log('请求成功返回来的参数', res.data)
+    // return res.data
+    console.log('post请求成功返回来的参数', res)
     return res
   }).catch((err) => {
     // handleError(err) 请求失败的处理方式

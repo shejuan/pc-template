@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import { Component } from 'vue-property-decorator'
 import template from './jingli.vue'
+import api from '@/api/index'
 // import { watch } from 'fs'
 
 @Component({
@@ -17,9 +18,9 @@ export default class Jingli extends Vue {
   }
 
   async getTopics () {
-    console.log('1', this.api)
+    console.log('1', api)
     try {
-      let resultData = await this.api.demo.sendInfo({ page: 1, tab: 'ask' })
+      let resultData = await api.demo.sendInfo({ page: 1, tab: 'ask' })
       console.log(resultData, 'resultData-----')
     } catch (error) {
       console.log(error)

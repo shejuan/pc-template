@@ -16,7 +16,18 @@ export default class Jingli extends Vue {
     this.data = this.$store.getters.getName
   }
 
+  async getTopics () {
+    console.log('1', this.api)
+    try {
+      let resultData = await this.api.demo.sendInfo({ page: 1, tab: 'ask' })
+      console.log(resultData, 'resultData-----')
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   created () {
     this.data = this.$store.getters.getName
+    this.getTopics()
   }
 }

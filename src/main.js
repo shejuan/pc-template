@@ -8,7 +8,13 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import './style/app.scss'
 import meta from 'vue-meta'
+// import api from 'api/http'
+import * as api from './api'
 
+// Vue.use(api)
+// api(Vue)
+// Vue.prototype.$api = api
+console.log(api, '----')
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(meta, {

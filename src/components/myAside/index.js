@@ -13,10 +13,12 @@ export default class MyAside extends Vue {
       title: '首页',
       list: [
         {
-          oneTitle: '无'
+          oneTitle: '个人资料',
+          path:'user/message'
         },
         {
-          oneTitle: '无'
+          oneTitle: '工作经历',
+          path:'user/working'
         }
       ]
     },

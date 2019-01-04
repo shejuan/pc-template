@@ -41,3 +41,8 @@ Vue.use(meta, {
 
 4.2018-8-30
 新增了vuex 模块
+
+# 5.添加了reset.scss
+重置css样式可以让标签在不同浏览器下产生相同的效果
+
+# 6.路由处使用了简单的require.context() 一次新引入文件，不需要多次使用import XX...

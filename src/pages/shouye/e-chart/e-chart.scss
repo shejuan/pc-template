@@ -1,0 +1,32 @@
+@import "src/style/base/variables";
+.common-box {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.common-item {
+    flex: 1;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+
+    .date-class {
+        height: 30px;
+        border: 1px solid red;
+    }
+    .echart-class {
+        flex: 1;
+    }
+
+}

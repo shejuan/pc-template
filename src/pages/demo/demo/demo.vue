@@ -63,6 +63,7 @@
                 <h4> 使用scss样式，样式撰写可用嵌套的格式。。。。</h4>
             </div>
 
+            <h2 @click="runGoTo3('shouye')">点击进入官网</h2>
         </div>
     </div>
 </template>

@@ -9,6 +9,7 @@ import { Store } from 'src/store/modules/demo'
 
 import NavHeader from '../unit/navHeader'
 import NavFooter from '../unit/navFooter'
+import { debug } from 'util';
 
 @Component({
     name: 'demo',
@@ -75,6 +76,10 @@ export default class Demo extends Vue {
             id: '1'
         }
       })
+    }
+
+    runGoTo3(key) {
+        this.goTo('website')
     }
 
     // 独立获取数据

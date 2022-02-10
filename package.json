@@ -16,7 +16,7 @@
     "axios": "^0.18.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "element-ui": "^2.4.6",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.1.0",
     "shelljs": "^0.8.3",
     "sj-components": "^1.0.1",
